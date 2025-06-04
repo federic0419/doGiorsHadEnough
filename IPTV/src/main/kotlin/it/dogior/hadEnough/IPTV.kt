@@ -5,7 +5,7 @@ import com.lagradost.cloudstream3.utils.AppUtils.parseJson
 import com.lagradost.cloudstream3.utils.AppUtils.toJson
 import com.lagradost.cloudstream3.utils.newExtractorLink
 import com.lagradost.cloudstream3.utils.ExtractorLink
-
+import com.lagradost.cloudstream3.utils.ExtractorLinkType
 import com.lagradost.cloudstream3.utils.Qualities
 import java.io.InputStream
 
@@ -90,20 +90,19 @@ class FreeTVProvider : MainAPI() {
         callback: (ExtractorLink) -> Unit
     ): Boolean {
         val loadData = parseJson<LoadData>(data)
+
         callback.invoke(
-            callback.invoke(
-                newExtractorLink(
-                    this.name,
-                    loadData.title,
-                    loadData.url,
-                    "",
-                    quality = Qualities.Unknown.value,
-                    type = ExtractorLinkType.Hls
-                )
+            newExtractorLink(
+                name = this.name,
+                source = loadData.title,
+                url = loadData.url,
+                referer = "",
+                quality = Qualities.Unknown.value,
+                type = ExtractorLinkType.Hls
             )
         )
+
         return true
-    }
 }
 
 
