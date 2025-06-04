@@ -93,10 +93,10 @@ class FreeTVProvider : MainAPI() {
 
         callback.invoke(
             ExtractorLink(
-                name = this.name,
-                source = loadData.title,
+                source = this.name,
+                name = loadData.title,
                 url = loadData.url,
-                type = ExtractorLinkType.Hls,
+                referer = "", // oppure usa un vero referer se il tuo stream lo richiede
                 quality = Qualities.Unknown.value,
                 isM3u8 = true
             )
