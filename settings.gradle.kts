@@ -17,6 +17,7 @@ include(
     "OnlineSerieTV",
     "StreamingCommunity",
     "TV",
+    "IPTV",
     "ToonItalia",
     "Torrentio",
     "YouTube"
