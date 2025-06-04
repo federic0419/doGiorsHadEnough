@@ -1,0 +1,41 @@
+[
+    {
+        "url": "https://raw.githubusercontent.com/federic0419/doGiorsHadEnough/builds/CalcioStreaming.cs3",
+        "status": 1,
+        "version": 4,
+        "name": "CalcioStreaming",
+        "internalName": "CalcioStreaming",
+        "authors": [
+            "Gian-Fr",
+            "Adippe",
+            "doGior"
+        ],
+        "description": "Live streams from the CalcioStreaming. Forked from the CalcioStreaming plugin in the ItalianProvider repo",
+        "fileSize": 11315,
+        "repositoryUrl": "https://github.com/federic0419/doGiorsHadEnough",
+        "language": "it",
+        "tvTypes": [
+            "Live"
+        ],
+        "iconUrl": "https://www.calciostreaming.cool/templates/calciostreaming1/images/icons/apple-touch-icon.png",
+        "apiVersion": 1
+    },
+    {
+        "url": "https://raw.githubusercontent.com/federic0419/doGiorsHadEnough/builds/DaddyLive.cs3",
+        "status": 1,
+        "version": 11,
+        "name": "DaddyLive",
+        "internalName": "DaddyLive",
+        "authors": [
+            "doGior"
+        ],
+        "description": "Live TV from DaddyLive. You might need a VPN",
+        "fileSize": 30808,
+        "repositoryUrl": "https://github.com/federic0419/doGiorsHadEnough",
+        "tvTypes": [
+            "Live"
+        ],
+        "iconUrl": "https://raw.githubusercontent.com/doGior/doGiorsHadEnough/refs/heads/master/DaddyLive/live-streaming.png",
+        "apiVersion": 1
+    }
+]

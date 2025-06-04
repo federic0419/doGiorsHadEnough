@@ -1,0 +1,8 @@
+{
+  "name": "Federico had Enough",
+  "description": "Repository with mostly italian providers and some international one",
+  "manifestVersion": 1,
+  "pluginLists": [
+    "https://raw.githubusercontent.com/federic0419/doGiorsHadEnough/builds/plugin.json"
+  ]
+}
