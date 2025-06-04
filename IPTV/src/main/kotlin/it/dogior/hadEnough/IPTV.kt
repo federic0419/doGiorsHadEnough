@@ -95,11 +95,7 @@ class FreeTVProvider : MainAPI() {
             newExtractorLink(
                 source = this.name,
                 name = loadData.title,
-                url = loadData.url,
-                referer = "", // oppure usa un vero referer se richiesto
-                quality = Qualities.Unknown.value,
-                isM3u8 = true,
-                headers = emptyMap()
+                url = loadData.url
             )
         )
 
