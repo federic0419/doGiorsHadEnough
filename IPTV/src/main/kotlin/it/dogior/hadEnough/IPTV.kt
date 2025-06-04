@@ -92,17 +92,18 @@ class FreeTVProvider : MainAPI() {
         val loadData = parseJson<LoadData>(data)
 
         callback.invoke(
-            newExtractorLink(
+            ExtractorLink(
                 name = this.name,
                 source = loadData.title,
                 url = loadData.url,
-                referer = "",
+                type = ExtractorLinkType.Hls,
                 quality = Qualities.Unknown.value,
-                type = ExtractorLinkType.Hls
+                isM3u8 = true
             )
         )
 
         return true
+    }
 }
 
 
